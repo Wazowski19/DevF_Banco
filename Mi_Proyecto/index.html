@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos</title>
+    <link rel="stylesheet" href="Estilos/styles.css"/>
+    <link rel="stylesheet" href="Estilos/css/bootstrap.min.css">
+    
+</head>
+<body>
+
+    <div class="container principal" >
+        <div class="row" id="login">
+            <div class="col mt-5">
+                <img src="Imagenes/banco.png" alt="">
+            </div>
+            <div class="col">
+                <div class="text-end">
+                    <img src="Imagenes/devf-logo.png" width="15%" alt="devf-logo">
+                </div>
+
+                <h2 class="fw-bold text-center py-5">Cajero Banco</h2>
+
+                <form>
+                    <div class="mb-4">
+                        <label for="usuario" class="form-label">Seleccione su usuario</label>
+                        <select  name="usuario" id="usuario" class="form-select">
+                            <option value="">Elija Opcion</option>
+                        </select>
+                    </div>
+            
+
+                    <div class="mb-4">
+                        <label for="password" class="form-label">Ingrese su contraseña</label>
+                        <input type="password" name="password" id="password" class="form-control">
+                        <p id="incorrecto"></p>
+                    </div>
+                    
+                    <div class="d-grid">
+                        <input type="submit" id="btnIngreso" value="Ingresar" onclick="comparar(event)">
+
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+        <div class="d-flex flex-column justify-content-center align-items-center">
+            <div class="my-4" id="opcionesUsuario">
+                <button id="opciones" onclick="movimientos(event,1)">Consultar Saldo</button>
+                <button id="opciones" onclick="movimientos(event,2)">Retirar</button>
+                <button id="opciones" onclick="movimientos(event,3)">Depositar</button>
+            </div>
+        
+            <div class="root-app" id="interaccion">
+                <p id="saldo">$</p>
+            </div>
+
+            <div id="interaccionMonto">
+                <input type="number" id="monto" name="monto" value="0"/>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <!-- <h1>Objetos y Prototipos - Cajero Banco chiquito</h1>
+
+    <div id="root-app" class="root-app"></div>
+
+    <form id="ingreso">
+        <label for="usuario">Seleccione su usuario</label>
+        <select  name="usuario" id="usuario">
+            <option value="">Elija Opcion</option>
+        </select>
+
+        <label for="usuario">Ingrese su contraseña</label>
+        <input type="password" name="password" id="password">
+
+        <p id="incorrecto"></p>
+        <input type="submit" id="btnIngreso" value="Ingresar" onclick="comparar(event)">
+    </form>
+
+    <div id="opcionesUsuario">
+        <button id="opciones" onclick="movimientos(event,1)">Consultar Saldo</button>
+        <button id="opciones" onclick="movimientos(event,2)">Retirar</button>
+        <button id="opciones" onclick="movimientos(event,3)">Depositar</button>
+    </div>
+
+    <div class="root-app" id="interaccion">
+        <input type="text" id="monto" name="monto"/>
+        <p id="saldo"></p>
+    </div> -->
+
+    <script src="Estilos/js/bootstrap.min.js"></script>
+    <script src="Scripts/cuentas.js"></script>
+    <script src="Scripts/app.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,45 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+.principal{
+    background-color: #c2b1dd;
+    padding: 0 5rem 6rem !important;
+    margin: 0 5.5rem !important; 
+}
+
+#btnIngreso, #opciones{
+    height: 44px;
+    border: none;
+    background-color: #7f65aa;
+    color: #fff;
+    border-radius: 7px;
+    font-size: 20px;
+    font-weight: 800;
+    
+}
+
+#opcionesUsuario{
+    display: none;
+}
+
+#opciones{
+    margin-left: 40px;
+}
+
+#interaccion, #interaccionMonto{
+    display: none;
+}
+
+#interaccion > input{
+    border-radius: 7px;
+    height: 44px;
+    border: solid 1px crimson;
+    outline: none;
+}
+
+#interaccion > p{
+    color: black;
+    font-size: 1.5em;
+}

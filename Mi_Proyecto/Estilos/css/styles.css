@@ -1,0 +1,86 @@
+a{
+    text-decoration: none;
+}
+
+#logo{
+    width: 50vw;
+    border-radius: 10px;
+}
+
+#malamuute1, #malamuute2, #malamuute3, #malamuute4{
+    width: 80vw;
+    height: 100vw;
+    object-fit: cover;
+    object-position: 0px 0px;
+}
+
+#dog{
+    object-fit: cover;
+    object-position: 0px 0px;
+    width: 30vw;
+}
+
+#google{
+    width: 6vw;
+}
+
+#dog_logo{
+    width: 10vw;
+    position: relative;
+    top: -5vw;
+}
+
+#separador{
+    overflow: hidden;
+    position: relative;
+    right: -12vw;
+    z-index: 2;  
+}
+
+.contenedor{
+    height: 70px;
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    background-color: #4dc5bb;
+    background: radial-gradient( #4dc5bb,#215854 90%);
+}
+
+.button_color:hover{
+    opacity: 85%;
+}
+
+.table_color{
+  --bs-table-bg: #04948c;
+  --bs-table-striped-bg: #5dbcb3;
+  --bs-table-striped-color: #000;
+  --bs-table-active-bg: #aedbd9;
+  --bs-table-active-color: #000;
+  --bs-table-hover-bg: #aedbd9  ;
+  --bs-table-hover-color: #000;
+  color: #000;
+  border-color: #049484;
+}
+
+.card_width{
+    width: 100vw;
+}
+
+.card_border{
+    border: solid 10px #fff;
+    border-radius: 20px;
+    transition: all ease-out 0.2s;
+    margin: 0 auto;
+}
+
+.card_border:hover{
+    transform: scale(1.05);
+}
+
+.card_bg{
+    background-color: #aedbd9;
+}
+
+
+
+
+
